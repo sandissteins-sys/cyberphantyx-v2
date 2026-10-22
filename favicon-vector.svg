@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <!-- Background transparent -->
+  <!-- Hood shape -->
+  <path d="M256 20 C180 20 120 90 110 180 C100 220 60 280 40 320 L90 360 L100 380 C130 440 190 490 256 490 C322 490 382 440 412 380 L422 360 L472 320 C452 280 412 220 402 180 C392 90 332 20 256 20 Z" fill="#0a0a12" stroke="#1a1a2e" stroke-width="4"/>
+  <!-- Hood inner shadow -->
+  <path d="M130 200 C150 120 190 40 256 40 C322 40 362 120 382 200 L350 220 L320 240 L256 260 L192 240 L162 220 Z" fill="#151528" opacity="0.9"/>
+  <!-- Face dark -->
+  <path d="M160 220 Q256 260 352 220 Q340 320 256 380 Q172 320 160 220" fill="#050508"/>
+  <!-- Glowing X eyes -->
+  <g stroke="#a855f7" stroke-width="10" stroke-linecap="round" filter="url(#glow)">
+    <line x1="180" y1="160" x2="332" y2="290" />
+    <line x1="332" y1="160" x2="180" y2="290" />
+  </g>
+  <defs>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <!-- Subtle circuit lines -->
+  <path d="M140 100 L160 110 L160 150 L180 160" stroke="#a855f7" stroke-width="2" fill="none" opacity="0.4"/>
+  <path d="M372 100 L352 110 L352 150 L332 160" stroke="#a855f7" stroke-width="2" fill="none" opacity="0.4"/>
+</svg>
